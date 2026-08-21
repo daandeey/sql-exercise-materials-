@@ -17,9 +17,11 @@ Source slides: `10 - SQL Working with Multiple Tables.pdf`.
 ## Setup
 
 1. Install **MySQL Server** and **MySQL Workbench** (or use the `mysql` CLI client).
-2. Download and import the **`sakila`** sample database, used throughout the demos and
-   exercises: https://dev.mysql.com/doc/index-other.html (look for "sakila database" --
-   it ships as two files, `sakila-schema.sql` then `sakila-data.sql`, run in that order).
+2. Import the **`sakila`** sample database, used throughout the demos and exercises. It's
+   already included at `../data/sakila-db/` (`sakila-schema.sql` then `sakila-data.sql`)
+   -- see the repo-root [README](../README.md#database-setup) for the install steps
+   (connect with `mysql -u root -p`, then `SOURCE data/sakila-db/sakila-schema.sql;`
+   followed by `SOURCE data/sakila-db/sakila-data.sql;`).
 3. Confirm it loaded:
    ```sql
    SHOW DATABASES;

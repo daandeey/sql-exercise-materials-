@@ -18,10 +18,12 @@ Source slides: `9 - Introduction to _Databases and SQL.pdf`.
 
 1. Install **MySQL Server** and **MySQL Workbench** (or use the `mysql` CLI client shown in
    the slides — Windows Start menu → "MySQL 8.0 Command Line Client").
-2. Download and import the **`world`** sample database, used throughout the demos and
-   exercises: https://dev.mysql.com/doc/index-other.html (look for "world database").
-   - In Workbench: `Server > Data Import`, or just run the downloaded `world.sql` file
-     as a script (`File > Open SQL Script`, then the lightning-bolt "Execute" button).
+2. Import the **`world`** sample database, used throughout the demos and exercises. It's
+   already included at `../data/world-db/world.sql` — see the repo-root
+   [README](../README.md#database-setup) for the install steps (connect with
+   `mysql -u root -p`, then `SOURCE data/world-db/world.sql;`). In Workbench you can
+   instead use `Server > Data Import`, or open the file as a script
+   (`File > Open SQL Script`, then the lightning-bolt "Execute" button).
 3. Confirm it loaded:
    ```sql
    SHOW DATABASES;
